@@ -1,0 +1,16 @@
+#content-user {
+  .action-group {
+    .action {
+      margin-left: 10px;
+    }
+    .action-view {
+      color: $primary;
+    }
+    .action-edit {
+      color: $warning;
+    }
+    .action-delete {
+      color: $danger;
+    }
+  }
+}
