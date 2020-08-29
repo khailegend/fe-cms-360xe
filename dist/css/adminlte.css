@@ -20806,6 +20806,11 @@ html.maximized-card {
   text-align: center;
 }
 
+#content-user .card-action .action {
+  padding: 10px 20px;
+  outline: 0;
+}
+
 #content-user .action-group .action {
   margin-left: 10px;
 }
@@ -20820,6 +20825,115 @@ html.maximized-card {
 
 #content-user .action-group .action-delete {
   color: #dc3545;
+}
+
+.dropzone {
+  border-radius: 5px;
+}
+
+.dropzone .dz-message {
+  margin: 0;
+}
+
+.dropzone.dz-started {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+  flex-flow: wrap;
+}
+
+.dropzone.dz-started .dz-default {
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 16px;
+  width: 120px;
+  height: 120px;
+  border: 1px solid #b2b2b2;
+  border-radius: 5px;
+}
+
+.dropzone.dz-started .dz-default .dz-button {
+  padding: 20px 5px;
+}
+
+.dropzone.dz-started .default-message {
+  text-align: center;
+}
+
+.dropzone.dz-started .default-message img {
+  height: 30px;
+}
+
+.dropzone.dz-started .default-message p {
+  font-size: 15px;
+}
+
+.dropzone.dz-started .default-message .recommendation {
+  display: none;
+}
+
+.dropzone .dz-default {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+  border: 1px solid #b2b2b2;
+  border-radius: 5px;
+}
+
+.dropzone .dz-default .dz-button {
+  padding: 20px 5px;
+}
+
+.dropzone .default-message img {
+  height: 60px;
+}
+
+.dropzone .default-message .recommendation {
+  font-size: 12px;
+  margin-top: 50%;
+}
+
+.dropzone .dz-preview {
+  position: relative;
+  -ms-flex-order: -1;
+  order: -1;
+}
+
+.dropzone .dz-preview:hover .dz-error-mark {
+  display: none;
+}
+
+.dropzone .dz-preview .dz-progress {
+  display: none;
+}
+
+.dropzone .dz-preview .dz-error-message {
+  margin-left: 30px;
+}
+
+.dropzone .dz-preview .dz-success-mark {
+  display: none;
+}
+
+.dropzone .dz-preview .dz-error-mark {
+  padding: 5px 10px;
+  color: #dc3545;
+  border-radius: 50%;
+  border: 1.5px solid #dc3545;
+}
+
+.dropzone .dz-preview a.dz-remove {
+  display: none;
+}
+
+.dropzone .dz-preview a.data-dz-remove {
+  position: absolute;
+  bottom: 120px;
+  color: #dc3545;
+  text-decoration: none;
 }
 
 .fc-button {

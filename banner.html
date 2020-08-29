@@ -65,7 +65,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="user.html" class="nav-link active">
+            <a href="user.html" class="nav-link">
               <i class="nav-icon fas fa-user-alt"></i>
               <p>
                 User
@@ -80,8 +80,8 @@
               </p>
             </a>
           </li>
-          <li class="nav-item">
-            <a href="banner.html" class="nav-link">
+          <li class="nav-item menu-open">
+            <a href="banner.html" class="nav-link active">
               <i class="nav-icon fas fa-table"></i>
               <p>
                 Banner   
@@ -102,11 +102,11 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>User</h1>
+            <h1>DataTables</h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">User</a></li>
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
             </ol>
           </div>
         </div>
@@ -114,205 +114,113 @@
     </section>
 
     <!-- Main content -->
-    <section class="content" id="content-user">
+    <section class="content">
       <div class="container-fluid">
         <div class="row">
           <div class="col-12">
             <div class="card">
               <div class="card-header">
-                <h3 class="card-title">DataTable of user</h3><br>
-                
-                <div class="card-action">
-                  <a href="#">
-                    <button class="action add-user btn-primary">
-                      <i class="fas fa-user-plus">Add user</i>
-                    </button>
-                  </a>
-                  <a href="#">
-                    <button class="action btn-danger">
-                      <i class="fas fa-user-plus">Add user</i>
-                    </button>
-                  </a>
-                  <a href="#">
-                    <button class="action btn-success">
-                      <i class="fas fa-user-plus">Add user</i>
-                    </button>
-                  </a>
-                  <a href="#">
-                    <button class="action btn-warning">
-                      <i class="fas fa-user-plus">Add user</i>
-                    </button>
-                  </a>
-                </div>
+                <h3 class="card-title">DataTable with minimal features & hover style</h3>
               </div>
-              
               <!-- /.card-header -->
               <div class="card-body">
                 <table id="example2" class="table table-bordered table-hover">
                   <thead>
                   <tr>
                     <th>ID</th>
-                    <th>Name</th>
-                    <th>Email</th>
-                    <th>Phone</th>
-                    <th>Action</th>
+                    <th>Title</th>
+                    <th>Images</th>
+                    <th>Link</th>
                   </tr>
                   </thead>
                   <tbody>
                   <tr>
                     <td>Trident</td>
                     <td>Internet
-                      Explorer 4.0
+                      Explorer 6
                     </td>
-                    <td>Win 95+</td>
-                    <td> 4</td>
-                    <td class="action-group ">
-                      <a href="#" class="action action-view">
-                        <i class="fas fa-eye"></i>
-                      </a>
-                      <a href="#" class="action action-edit">
-                        <i class="fas fa-edit"></i>
-                      </a>
-                      <a href="#" class="action action-delete">
-                        <i class="fas fa-trash-alt"></i>
-                      </a>
-                    </td>
+                    <td>Win 98+</td>
+                    <td>6</td>
+                    
                   </tr>
-
                   <tr>
                     <td>Gecko</td>
                     <td>Epiphany 2.20</td>
                     <td>Gnome</td>
                     <td>1.8</td>
-                    <td class="action-group ">
-                      <a href="#" class="action action-view">
-                        <i class="fas fa-eye"></i>
-                      </a>
-                      <a href="#" class="action action-edit">
-                        <i class="fas fa-edit"></i>
-                      </a>
-                      <a href="#" class="action action-delete">
-                        <i class="fas fa-trash-alt"></i>
-                      </a>
-                    </td>
+                    
                   </tr>
                   <tr>
                     <td>Webkit</td>
                     <td>S60</td>
                     <td>S60</td>
                     <td>413</td>
-                    <td class="action-group ">
-                      <a href="#" class="action action-view">
-                        <i class="fas fa-eye"></i>
-                      </a>
-                      <a href="#" class="action action-edit">
-                        <i class="fas fa-edit"></i>
-                      </a>
-                      <a href="#" class="action action-delete">
-                        <i class="fas fa-trash-alt"></i>
-                      </a>
-                    </td>
-                  </tr>
+                    
+                  </tr> 
                   <tr>
                     <td>Presto</td>
                     <td>Nintendo DS browser</td>
                     <td>Nintendo DS</td>
                     <td>8.5</td>
-                    <td class="action-group ">
-                      <a href="#" class="action action-view">
-                        <i class="fas fa-eye"></i>
-                      </a>
-                      <a href="#" class="action action-edit">
-                        <i class="fas fa-edit"></i>
-                      </a>
-                      <a href="#" class="action action-delete">
-                        <i class="fas fa-trash-alt"></i>
-                      </a>
-                    </td>
+                    
                   </tr>
                   <tr>
                     <td>KHTML</td>
-                    <td>Konqureror 3.5</td>
-                    <td>KDE 3.5</td>
-                    <td>3.5</td>
-                    <td class="action-group ">
-                      <a href="#" class="action action-view">
-                        <i class="fas fa-eye"></i>
-                      </a>
-                      <a href="#" class="action action-edit">
-                        <i class="fas fa-edit"></i>
-                      </a>
-                      <a href="#" class="action action-delete">
-                        <i class="fas fa-trash-alt"></i>
-                      </a>
-                    </td>
+                    <td>Konqureror 3.1</td>
+                    <td>KDE 3.1</td>
+                    <td>3.1</td>
+                   
+                  </tr>
+                  <tr>
+                    <td>Tasman</td>
+                    <td>Internet Explorer 4.5</td>
+                    <td>Mac OS 8-9</td>
+                    <td>-</td>
+                    
+                  </tr>
+                  <tr>
+                    <td>Tasman</td>
+                    <td>Internet Explorer 5.1</td>
+                    <td>Mac OS 7.6-9</td>
+                    <td>1</td>
+                   
                   </tr>
                   <tr>
                     <td>Tasman</td>
                     <td>Internet Explorer 5.2</td>
                     <td>Mac OS 8-X</td>
                     <td>1</td>
-                    <td class="action-group ">
-                      <a href="#" class="action action-view">
-                        <i class="fas fa-eye"></i>
-                      </a>
-                      <a href="#" class="action action-edit">
-                        <i class="fas fa-edit"></i>
-                      </a>
-                      <a href="#" class="action action-delete">
-                        <i class="fas fa-trash-alt"></i>
-                      </a>
-                    </td>
+                    
                   </tr>
                   <tr>
                     <td>Misc</td>
                     <td>PSP browser</td>
                     <td>PSP</td>
                     <td>-</td>
-                    <td class="action-group ">
-                      <a href="#" class="action action-view">
-                        <i class="fas fa-eye"></i>
-                      </a>
-                      <a href="#" class="action action-edit">
-                        <i class="fas fa-edit"></i>
-                      </a>
-                      <a href="#" class="action action-delete">
-                        <i class="fas fa-trash-alt"></i>
-                      </a>
-                    </td>
+                    
                   </tr>
                   <tr>
                     <td>Other browsers</td>
                     <td>All others</td>
                     <td>-</td>
                     <td>-</td>
-                    <td class="action-group ">
-                      <a href="#" class="action action-view">
-                        <i class="fas fa-eye"></i>
-                      </a>
-                      <a href="#" class="action action-edit">
-                        <i class="fas fa-edit"></i>
-                      </a>
-                      <a href="#" class="action action-delete">
-                        <i class="fas fa-trash-alt"></i>
-                      </a>
-                    </td>
+                    
                   </tr>
                   </tbody>
                   <tfoot>
                   <tr>
-                    <th>ID</th>
-                    <th>Name</th>
-                    <th>Email</th>
-                    <th>Phone</th>
-                    <th>Action</th>
+                    <th>Rendering engine</th>
+                    <th>Browser</th>
+                    <th>Platform(s)</th>
+                    <th>Engine version</th>
+                    
                   </tr>
                   </tfoot>
                 </table>
               </div>
               <!-- /.card-body -->
             </div>
-            <!-- /.card -->
+            <!-- /.card --> 
           </div>
           <!-- /.col -->
         </div>
