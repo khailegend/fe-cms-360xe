@@ -15,7 +15,7 @@
   <!-- Theme style -->
   <link rel="stylesheet" href="dist/css/adminlte.min.css">
 </head>
-<body class="hold-transition sidebar-mini user-page">
+<body class="hold-transition sidebar-mini post-page">
 <div class="wrapper">
   <!-- Navbar -->
   <nav class="main-header navbar navbar-expand navbar-white navbar-light">
@@ -65,7 +65,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="user.html" class="nav-link active">
+            <a href="user.html" class="nav-link">
               <i class="nav-icon fas fa-user-alt"></i>
               <p>
                 User
@@ -89,8 +89,8 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="post.html" class="nav-link">
-              <i class="nav-icon far fa-newspaper"></i>
+            <a href="post.html" class="nav-link active">
+              <i class="nav-icon fas fa-newspaper"></i>
               <p>
                 Posts   
               </p>
@@ -129,9 +129,9 @@
             <div class="card">
               <div class="card-header">
                 <h2 class="card-title">
-                  USER
-                  <small class="text-muted">Version 1.0</small>
-                </h2> 
+                    Post
+                    <small class="text-muted">Version 1.0</small> 
+                </h2>
                 <br>
                 
                 <div class="card-action">
@@ -176,12 +176,12 @@
                 <table id="example2" class="table table-bordered table-hover">
                   <thead>
                   <tr>
-                    <th>ID</th>
-                    <th>Avatar</th>
-                    <th>Name</th>
-                    <th>Role</th>
-                    <th>Email</th>
-                    <th>Phone</th>
+                    <th>User ID</th>
+                    <th>Type</th>
+                    <th>Title</th>
+                    <th>Description</th>
+                    <th>Images</th>
+                    <th>Slug</th>
                     <th>Actions</th>
                   </tr>
                   </thead>
@@ -189,13 +189,18 @@
                   <tr>
                     <td>123</td>
                     <td>
-                      <img src="assets/images/img_avatar.png" width="50px" height="50px">
+                      type
                     </td>
-                    <td>Peter</td>
-                    <td>user</td>
-                    <td>peter@gmail.com</td>
-                    <td>0123456789</td>
+                    <td>Xe 5 bánh</td>
+                    <td>bể nợ cần bán gắp</td>
+                    <td>
+                        <img src="assets/images/xe2.jpg" width="60px" height="60px">
+                    </td>
+                    <td>chủ xe</td>
                     <td class="action-group ">
+                      <button title="check" class="btn btn-sm action action-check">
+                        <i class="fas fa-check"></i>
+                      </button>
                       <button title="view" class="btn btn-sm action action-view">
                         <i class="fas fa-eye"></i>
                       </button>
@@ -214,13 +219,18 @@
                   <tr>
                     <td>456</td>
                     <td>
-                      <img src="assets/images/img_avatar.png" width="50px" height="50px">
+                      type
                     </td>
-                    <td>Gecko</td>
-                    <td>user</td>
-                    <td>gecko@gmail.com</td>
-                    <td>0129876543</td>
+                    <td>Xe 1 bánh rử</td>
+                    <td>thua banh cần bán</td>
+                    <td>
+                        <img src="assets/images/xe1.jpg" width="60px" height="60px">
+                    </td>
+                    <td>chủ xe</td>
                     <td class="action-group ">
+                      <button title="check" class="btn btn-sm action action-check">
+                        <i class="fas fa-check"></i>
+                      </button>
                       <button title="view" class="btn btn-sm action action-view">
                         <i class="fas fa-eye"></i>
                       </button>

@@ -11441,7 +11441,7 @@ body.sidebar-collapse:not(.sidebar-mini-md):not(.sidebar-mini) .main-header::bef
 :not(.layout-fixed) .main-sidebar {
   height: inherit;
   min-height: 100%;
-  position: absolute;
+  position: fixed;
   top: 0;
 }
 
@@ -11530,6 +11530,8 @@ body.sidebar-collapse:not(.sidebar-mini-md):not(.sidebar-mini) .main-header::bef
 .main-header {
   border-bottom: 1px solid #dee2e6;
   z-index: 1034;
+  position: fixed;
+  width: 100%;
 }
 
 .main-header .nav-link {
@@ -20806,33 +20808,27 @@ html.maximized-card {
   text-align: center;
 }
 
-#content-user .card-action .action {
-  padding: 10px 20px;
-  outline: 0;
+.user-page table {
+  font-size: 14px;
 }
 
-#content-user .action-group .action {
-  margin-left: 10px;
+.user-page .card-header .card-title {
+  font-weight: 700;
+  color: #343a40;
 }
 
-#content-user .action-group .action-view {
-  color: #007bff;
+.user-page .card-action .action {
+  padding: 5px 15px;
+  width: 100px;
+  font-size: 12px;
 }
 
-#content-user .action-group .action-edit {
-  color: #ffc107;
-}
-
-#content-user .action-group .action-delete {
-  color: #dc3545;
+.user-page .card-action .action i {
+  margin-top: 20%;
 }
 
 .dropzone {
   border-radius: 5px;
-}
-
-.dropzone .dz-message {
-  margin: 0;
 }
 
 .dropzone.dz-started {
@@ -20848,8 +20844,8 @@ html.maximized-card {
   padding-top: 0;
   padding-bottom: 0;
   margin-top: 16px;
-  width: 120px;
-  height: 120px;
+  width: 300px;
+  height: 300px;
   border: 1px solid #b2b2b2;
   border-radius: 5px;
 }
@@ -20885,6 +20881,10 @@ html.maximized-card {
 
 .dropzone .dz-default .dz-button {
   padding: 20px 5px;
+}
+
+.dropzone .dz-default.dz-message {
+  margin: 0;
 }
 
 .dropzone .default-message img {
@@ -20934,6 +20934,55 @@ html.maximized-card {
   bottom: 120px;
   color: #dc3545;
   text-decoration: none;
+}
+
+.post-page table {
+  font-size: 14px;
+}
+
+.post-page .card-header .card-title {
+  font-weight: 700;
+  color: #343a40;
+}
+
+.post-page .card-action .action {
+  padding: 5px 15px;
+  width: 100px;
+  font-size: 12px;
+}
+
+.post-page .card-action .action i {
+  margin-top: 20%;
+}
+
+.action-group .action {
+  color: #fff;
+  padding: .1rem .3rem;
+  width: 25px;
+}
+
+.action-group .action i {
+  text-align: center;
+}
+
+.action-group .action-check {
+  background-color: #17a2b8;
+}
+
+.action-group .action-view {
+  background-color: #007bff;
+}
+
+.action-group .action-edit {
+  background-color: #ffc107;
+}
+
+.action-group .action-delete {
+  background-color: #dc3545;
+}
+
+.action-group .action-reset {
+  background-color: #28a745;
 }
 
 .fc-button {

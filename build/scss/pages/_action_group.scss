@@ -1,0 +1,25 @@
+.action-group {
+  .action {
+    color: $white;
+    padding: .1rem .3rem;
+    width: 25px;
+    i {
+      text-align: center;
+    }
+  }
+  .action-check {
+    background-color: $info;
+  }
+  .action-view {
+    background-color: $primary;
+  }
+  .action-edit {
+    background-color: $warning;
+  }
+  .action-delete {
+    background-color: $danger;
+  }
+  .action-reset {
+    background-color: $success;
+  }
+}
