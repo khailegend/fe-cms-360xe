@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="plugins/dropzone/dropzone.css">
 </head>
 
-<body class="hold-transition sidebar-mini form-page">
+<body class="hold-transition sidebar-mini adduser-page">
   <div class="wrapper">
     <!-- Navbar -->
     <nav class="main-header navbar navbar-expand navbar-white navbar-light">
@@ -132,15 +132,15 @@
               <!-- right column -->
               <div class="col-md-12">
                 <!-- general form elements disabled -->
-                <div class="card card-danger">
+                <div class="card card-primary">
                   <div class="card-header">
-                    <h3 class="card-title">General Elements</h3>
+                    <h3 class="card-title">Add User</h3>
                   </div>
                   <!-- /.card-header -->
                   <div class="card-body">
                     <div class="form-upload col-sm-12 mb-4">
                       <form action="upload.php" enctype="multipart/form-data" method="POST">
-                        <div class="dropzone" id="myDropzone">
+                        <div class="dropzone col-lg-2 col-12" id="myDropzone">
 
                         </div>
                       </form>
@@ -150,22 +150,14 @@
                         <div class="col-sm-6">
                           <!-- text input -->
                           <div class="form-group">
-                            <label>Chọn thành phố *</label>
-                            <select class="form-control">
-                              <option>Tp. Hồ Chí Minh</option>
-                              <option>Hà Nội</option>
-                              <option>Đà Nẵng</option>
-                              <option>Hải Phòng</option>
-                              <option>Cần Thơ</option>
-                            </select>
+                            <label>First name *</label>
+                            <input type="text" class="form-control">
                           </div>
                         </div>
                         <div class="col-sm-6">
                           <div class="form-group">
-                            <label>Quận, huyện *</label>
-                            <select class="form-control">
-                              <option>Quận 7</option>
-                            </select>
+                            <label>Last name *</label>
+                            <input type="text" class="form-control">
                           </div>
                         </div>
                       </div>
@@ -173,134 +165,41 @@
                         <div class="col-sm-6">
                           <!-- textarea -->
                           <div class="form-group">
-                            <label>Phường, xã *</label>
-                            <select class="form-control">
-                              <option>Tân Thuận Tây</option>
-                            </select>
+                            <label>User name *</label>
+                            <input type="text" class="form-control">
                           </div>
                         </div>
                         <div class="col-sm-6">
                           <div class="form-group">
-                            <label>Tiêu đề *</label>
-                            <input type="text" class="form-control" placeholder="Enter ...">
+                            <label>Email *</label>
+                            <input type="text" class="form-control">
                           </div>
-                        </div>
-                        <div class="form-group col-sm-12">
-                          <label class="col-form-label" for="inputSuccess">Mô tả *</label>
-                          <textarea class="form-control" rows="3" placeholder="Enter ..."></textarea>
                         </div>
                       </div>
 
                       <!-- input states -->
                       <div class="row">
                         <div class="form-group col-sm-6">
-                          <label class="col-form-label" for="inputWarning">
-                            Giá bán *
-                          </label>
-                          <input type="text" class="form-control" id="inputWarning" placeholder="Enter ...">
+                          <label>Password *</label>
+                          <input type="text" class="form-control" placeholder="Enter ...">
                         </div>
                         <div class="form-group col-sm-6 ">
-                          <label class="col-form-label" for="inputError">
-                            Hãng xe *
-                          </label>
-                          <input type="text" class="form-control" id="inputError" placeholder="Enter ...">
+                          <label>Phone *</label>
+                          <input type="text" class="form-control" placeholder="Enter ...">
                         </div>
                         <div class="form-group col-sm-6 ">
-                          <label class="col-form-label" for="inputError">
-                            Dòng xe *
-                          </label>
-                          <input type="text" class="form-control" id="inputError" placeholder="Enter ...">
+                          <label>Address *</label>
+                          <input type="text" class="form-control" placeholder="Enter ...">
                         </div>
                         <div class="form-group col-sm-6 ">
-                          <label class="col-form-label" for="inputError">
-                            Năm sản xuất *
-                          </label>
-                          <input type="text" class="form-control" id="inputError" placeholder="Enter ...">
+                          <label>Birthday *</label>
+                          <input type="datetime" class="form-control" placeholder="Enter ...">
                         </div>
-                        <div class="form-group col-sm-6 ">
-                          <label class="col-form-label" >
-                            Phiên bản *
-                          </label>
-                          <input type="text" class="form-control" id="inputError" placeholder="Enter ...">
-                        </div>
+                        <button class="btn btn-up-post btn-primary mx-auto mb-3" >
+                          Add User
+                        </button>
                       </div>
                     </form>
-                    <div class="row">
-                      <div class="col-sm-6">
-                        <!-- radio -->
-                        <div class="form-group">
-                          <label>Tình trạng *</label>
-                          <div class="form-check">
-                            <input class="form-check-input" type="radio" name="status" checked>
-                            <label class="form-check-label">Mới</label>
-                          </div>
-                          <div class="form-check">
-                            <input class="form-check-input" type="radio" name="status" >
-                            <label class="form-check-label">Đã sử dụng</label>
-                            <form class="form-used row">
-                              <input class="form-control col-5 mr-2" type="text" placeholder="Biển số xe">
-                              <input class="form-control col-5" type="text" placeholder="Số km đã đi">
-                            </form>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-sm-6">
-                        <div class="form-group">
-                          <label>Người bán *</label>
-                          <div class="form-check">
-                            <input class="form-check-input" type="radio" name="seller">
-                            <label class="form-check-label">Cá nhân</label>
-                          </div>
-                          <div class="form-check">
-                            <input class="form-check-input" type="radio" name="seller" checked>
-                            <label class="form-check-label">Showroom</label>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="form-group col-sm-6">
-                        <label class="col-form-label" >
-                          Hộp số *
-                        </label>
-                        <input type="text" class="form-control" placeholder="Enter ...">
-                      </div>
-                      <div class="form-group col-sm-6 ">
-                        <label class="col-form-label" >
-                          Nhiên liệu *
-                        </label>
-                        <input type="text" class="form-control" placeholder="Enter ...">
-                      </div>
-                      <div class="form-group col-sm-6 ">
-                        <label class="col-form-label" >
-                          Xuất xứ *
-                        </label>
-                        <input type="text" class="form-control" placeholder="Enter ...">
-                      </div>
-                      <div class="form-group col-sm-6 ">
-                        <label class="col-form-label" >
-                          Kiểu dáng *
-                        </label>
-                        <input type="text" class="form-control" placeholder="Enter ...">
-                      </div>
-                      <div class="form-group col-sm-6 ">
-                        <label class="col-form-label" >
-                          Số chỗ *
-                        </label>
-                        <input type="text" class="form-control"  placeholder="Enter ...">
-                      </div>
-                      <div class="form-group col-sm-6 ">
-                        <label class="col-form-label" >
-                          Màu sắc *
-                        </label>
-                        <input type="text" class="form-control"  placeholder="Enter ...">
-                      </div>
-                    </div>
-                  </div>
-                  <button class="btn btn-up-post btn-primary mx-auto mb-3" >
-                    Đăng Bài
-                  </button>
-                </div>
               </div>
               <!--/.col (right) -->
             </div>
@@ -347,14 +246,14 @@
     Dropzone.options.myDropzone = {
       url: 'upload.php',
       autoProcessQueue: false,
-      uploadMultiple: true,
-      parallelUploads: 5,
-      maxFiles: 5,
+      uploadMultiple: false,
+      parallelUploads: 1,
+      maxFiles: 1,
       maxFilesize: 32,
       acceptedFiles: 'image/*',
       addRemoveLinks: true,
       dictCancelUpload: true,
-      dictDefaultMessage: '<div class="default-message"><img src="dist/img/icon-upload.svg" alt="..."><p>Drag and Drop <br> or <br> Click to upload</p><p class="recommendation">Recommendation: Use high-quality .jpg file less than 32MB</p></div>',
+      dictDefaultMessage: '<div class="default-message"><img src="dist/img/icon-upload.svg" alt="..."><br> Click to upload Avatar</p></div>',
       previewTemplate: '<div class="dz-preview dz-file-preview"><div class="dz-image"><img data-dz-thumbnail /></div><div class="dz-details"><div class="dz-size" data-dz-size></div><div class="dz-filename"><span data-dz-name></span></div></div><div class="dz-progress"><span class="dz-upload" data-dz-uploadprogress></span></div><div class="dz-error-message"><span data-dz-errormessage></span></div><div class="dz-success-mark"><span>✔</span></div><div class="dz-error-mark"><span>✘</span></div><a class="data-dz-remove" href="#" data-dz-remove><i class="fas fa-times-circle"></i></a></div>',
       init: function () {
         dzClosure = this;

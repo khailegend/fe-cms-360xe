@@ -1,26 +1,18 @@
-.form-page {
+.adduser-page {
   .dropzone {
     border-radius: 5px;
+    margin: auto;
     &.dz-started {
       display: flex;
       flex-flow: wrap;
     }
     &.dz-started .dz-default {
-      display: flex;
-      padding-top: 0;
-      padding-bottom: 0;
-      margin-top: 16px;
-      width: 300px;
-      height: 300px;
-      border: 1px solid #b2b2b2;
-      border-radius: 5px;
-      .dz-button {
-        padding: 20px 5px;
-      }
+      display: none;
     }
 
     &.dz-started .default-message {
       text-align: center;
+      margin: auto;
       img {
         height: 30px;
       }
@@ -58,12 +50,17 @@
       }
     }
     .dz-preview {
+      margin: auto;
       position: relative;
+      width: 100%;
       order: -1;
       &:hover {
         .dz-error-mark {
           display: none;
         }
+      }
+      .dz-image {
+        width: 100%;
       }
       .dz-progress {
         display: none;
